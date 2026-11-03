@@ -20,6 +20,7 @@
 <style>
   html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   @media (max-width: 520px) {
+    .astar-spec { grid-template-columns: 1fr !important; } .astar-cell { padding-left: 0 !important; margin: 0 !important; box-shadow: inset 0 -1px 0 0 var(--color-divider) !important; }
     .astar-marq { font-size: 9px !important; line-height: 14px !important; letter-spacing: 0.12em !important; padding-right: 36px !important; }
     .astar-nav { flex-wrap: nowrap !important; justify-content: space-between !important; gap: 10px !important; padding-inline: 14px !important; }
     .astar-spacer { display: none !important; }
@@ -90,15 +91,15 @@
 
   <sc-if value="{{ showSpecStrip }}" hint-placeholder-val="{{ true }}">
   <section data-reveal="" style="border-top: 1px solid var(--color-divider)">
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 1px; background: var(--color-divider)">
-      <div style="background: var(--color-bg); padding: 28px 24px 32px 0">
+    <div class="astar-spec" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 0; background: var(--color-bg); overflow: hidden">
+      <div class="astar-cell" style="background: var(--color-bg); padding: 28px 24px 32px 0; box-shadow: 1px 1px 0 0 var(--color-divider); margin: -1px 0 0 -1px">
         <span style="display: block; font-size: 11px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-accent)">Where</span>
         <span style="display: block; font-family: var(--font-heading); font-weight: 500; font-size: 28px; line-height: 34px; letter-spacing: -0.02em; margin-top: 12px">Truganina</span>
         <span style="display: block; font-size: 14px; line-height: 22px; margin-top: 8px; color: var(--color-neutral-400)">18/2 Fastline Drive , Near Boundary Rd</span>
       </div>
-      <div style="background: var(--color-bg); padding: 28px 24px 32px">
+      <div class="astar-cell" style="background: var(--color-bg); padding: 28px 24px 32px; box-shadow: 1px 1px 0 0 var(--color-divider); margin: -1px 0 0 -1px">
         <span style="display: block; font-size: 11px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-accent)">Contact</span>
-        <span style="display: block; font-family: var(--font-heading); font-weight: 500; font-size: 28px; line-height: 34px; letter-spacing: -0.02em; margin-top: 12px">0466 251 313</span>
+        <span style="display: block; font-family: var(--font-heading); font-weight: 500; font-size: 28px; line-height: 34px; letter-spacing: -0.02em; margin-top: 12px; white-space: nowrap">0466 251 313</span>
         <span style="display: block; font-size: 14px; line-height: 22px; margin-top: 8px; color: var(--color-neutral-400)">Call us, Message or WhatsApp</span>
       </div>
       <div style="background: var(--color-bg); padding: 28px 24px 32px">
